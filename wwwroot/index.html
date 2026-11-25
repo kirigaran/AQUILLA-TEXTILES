@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#590b1b">
+  <meta name="description" content="Aquilla Textiles — Where Heritage Meets Elegance.">
+  <title>Aquilla Textiles | Where Heritage Meets Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <main class="auth-shell" id="authShell">
+    <aside class="visual-panel" aria-label="Aquilla Textiles heritage branding and silk saree">
+      <img src="/images/aquilla-heritage-panel.jpg" alt="Aquilla Textiles royal AQ emblem with a traditional maroon and gold silk saree">
+    </aside>
+
+    <section class="form-panel">
+      <div class="form-content">
+        <form class="form-view active" id="loginView">
+          <h1>Welcome Back</h1>
+          <p class="subheading">Login to your account</p>
+          <div class="ornament" aria-hidden="true"><span></span><b>♧</b><span></span></div>
+
+          <label class="sr-only" for="loginUsername">Username</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">♙</span><input id="loginUsername" name="username" autocomplete="username" placeholder="Username" required></div>
+          <label class="sr-only" for="loginPassword">Password</label>
+          <div class="input-wrap"><span class="field-icon lock" aria-hidden="true">♙</span><input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Password" required><button class="eye-toggle" type="button" data-toggle="loginPassword" aria-label="Show password">◉</button></div>
+          <button class="text-link forgot-link" type="button" data-view="forgot">Forgot Password?</button>
+          <button class="primary-btn" type="submit">LOGIN</button>
+          <p class="switch-copy"><button type="button" class="text-link prominent-link" data-view="signup">Create New Account</button></p>
+          <p class="notice" id="loginNotice" aria-live="polite"></p>
+        </form>
+
+        <form class="form-view" id="signupView">
+          <h1>Create Account</h1>
+          <p class="subheading">Join Aquilla Textiles</p>
+          <div class="ornament" aria-hidden="true"><span></span><b>♧</b><span></span></div>
+
+          <label class="sr-only" for="signupUsername">Username</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">♙</span><input id="signupUsername" autocomplete="username" placeholder="Username" minlength="3" maxlength="40" required></div>
+          <label class="sr-only" for="signupEmail">Email address</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">✉</span><input id="signupEmail" type="email" autocomplete="email" placeholder="Email Address" maxlength="254" required></div>
+          <label class="sr-only" for="signupPassword">Password</label>
+          <div class="input-wrap"><span class="field-icon lock" aria-hidden="true">♙</span><input id="signupPassword" type="password" autocomplete="new-password" placeholder="Password (at least 8 characters)" minlength="8" required><button class="eye-toggle" type="button" data-toggle="signupPassword" aria-label="Show password">◉</button></div>
+          <label class="sr-only" for="confirmPassword">Confirm password</label>
+          <div class="input-wrap"><span class="field-icon lock" aria-hidden="true">♙</span><input id="confirmPassword" type="password" autocomplete="new-password" placeholder="Confirm Password" minlength="8" required><button class="eye-toggle" type="button" data-toggle="confirmPassword" aria-label="Show password">◉</button></div>
+          <button class="primary-btn" type="submit">SIGN UP</button>
+          <p class="switch-copy">Already have an account? <button type="button" class="text-link" data-view="login">Login</button></p>
+          <p class="notice" id="signupNotice" aria-live="polite"></p>
+        </form>
+
+        <form class="form-view" id="forgotView">
+          <h1>Forgot Password?</h1>
+          <p class="subheading">Enter your registered email to receive a verification code</p>
+          <div class="ornament" aria-hidden="true"><span></span><b>♧</b><span></span></div>
+          <label class="sr-only" for="forgotEmail">Registered email address</label>
+          <div class="input-wrap"><span class="field-icon" aria-hidden="true">✉</span><input id="forgotEmail" type="email" autocomplete="email" placeholder="Registered Email Address" required></div>
+          <button class="primary-btn" type="submit">SEND CODE</button>
+          <div class="reset-box" id="resetBox" hidden>
+            <p class="reset-instruction">Enter the 6-digit code sent to your email, then choose a new password.</p>
+            <label class="sr-only" for="resetCode">Verification code</label>
+            <div class="input-wrap"><span class="field-icon" aria-hidden="true">✧</span><input id="resetCode" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit verification code"></div>
+            <label class="sr-only" for="newPassword">New password</label>
+            <div class="input-wrap"><span class="field-icon lock" aria-hidden="true">♙</span><input id="newPassword" type="password" minlength="8" placeholder="New Password (at least 8 characters)"></div>
+            <button class="primary-btn" id="resetButton" type="button">RESET PASSWORD</button>
+          </div>
+          <p class="switch-copy"><button type="button" class="text-link" data-view="login">← Back to Login</button></p>
+          <p class="notice" id="forgotNotice" aria-live="polite"></p>
+        </form>
+
+        <section class="form-view collections-view" id="collectionsView">
+          <h1>Our Collections</h1>
+          <p class="subheading">Find a style for every generation</p>
+          <div class="ornament" aria-hidden="true"><span></span><b>♧</b><span></span></div>
+          <div class="collection-grid">
+            <button class="collection-card" type="button" data-category="men"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=700&q=85" alt="Men's traditional clothing"><span>MEN'S COLLECTION</span><small>Classic style, timeless charm</small></button>
+            <button class="collection-card" type="button" data-category="women"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85" alt="Women's traditional saree"><span>WOMEN'S COLLECTION</span><small>Elegance in every weave</small></button>
+            <button class="collection-card" type="button" data-category="kids"><img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85" alt="Children in festive clothing"><span>KIDS' COLLECTION</span><small>Little looks, lovely memories</small></button>
+          </div>
+          <p class="collection-status" id="collectionStatus" aria-live="polite">Choose a collection to explore.</p>
+          <button class="text-link logout-link" id="logoutButton" type="button">Log out</button>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="/js/app.js"></script>
+</body>
+</html>
