@@ -80,8 +80,26 @@
             <button class="collection-card" type="button" data-category="women"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85" alt="Women's traditional saree"><span>WOMEN'S COLLECTION</span><small>Elegance in every weave</small></button>
             <button class="collection-card" type="button" data-category="kids"><img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85" alt="Children in festive clothing"><span>KIDS' COLLECTION</span><small>Little looks, lovely memories</small></button>
           </div>
-          <p class="collection-status" id="collectionStatus" aria-live="polite">Choose a collection to explore.</p>
-          <button class="text-link logout-link" id="logoutButton" type="button">Log out</button>
+          
+<div id="categoryPage" hidden>
+  <h2 id="categoryTitle">Explore Collection</h2>
+
+  <p id="categorySubtitle">Choose a category</p>
+
+  <div id="categoryGrid" class="collection-grid"></div>
+
+  <button type="button" id="backToCollections" class="primary-btn">
+    ← BACK TO COLLECTIONS
+  </button>
+</div>
+
+<p class="collection-status" id="collectionStatus" aria-live="polite">
+  Choose a collection to explore.
+</p>
+
+<button class="text-link logout-link" id="logoutButton" type="button">
+  Log out
+</button>
         </section>
       </div>
     </section>
